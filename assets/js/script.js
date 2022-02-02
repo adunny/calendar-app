@@ -63,20 +63,20 @@ function retrieveData(){
 
 function checkTime () {
     // remove any background classes before checking time
-    $("#hour-1-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-2-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-3-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-4-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-5-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-6-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-7-text").removeClass("bg-success bg-secondary bg-warning")
-    $("#hour-8-text").removeClass("bg-success bg-secondary bg-warning")
+    $("#hour-1-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-2-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-3-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-4-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-5-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-6-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-7-text").removeClass("bg-success bg-secondary bg-warning text-light")
+    $("#hour-8-text").removeClass("bg-success bg-secondary bg-warning text-light")
 
      // check time of first timeblock and change background accordingly
     if(moment().isBetween(moment("09:00", "HH:mm"), moment("09:59", "HH:mm"))){
         $("#hour-1-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("09:59", "HH:mm"))){
-        $("#hour-1-text").addClass("bg-secondary")
+        $("#hour-1-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("09:00", "HH:mm"))){
         $("#hour-1-text").addClass("bg-success")
     }
@@ -84,7 +84,7 @@ function checkTime () {
     if(moment().isBetween(moment("10:00", "HH:mm"), moment("10:59", "HH:mm"))){
         $("#hour-2-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("10:59", "HH:mm"))){
-        $("#hour-2-text").addClass("bg-secondary")
+        $("#hour-2-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("10:00", "HH:mm"))){
         $("#hour-2-text").addClass("bg-success")
     }
@@ -92,7 +92,7 @@ function checkTime () {
     if(moment().isBetween(moment("11:00", "HH:mm"), moment("11:59", "HH:mm"))){
         $("#hour-3-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("11:59", "HH:mm"))){
-        $("#hour-3-text").addClass("bg-secondary")
+        $("#hour-3-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("11:00", "HH:mm"))){
         $("#hour-3-text").addClass("bg-success")
     }
@@ -100,7 +100,7 @@ function checkTime () {
     if(moment().isBetween(moment("12:00", "HH:mm"), moment("12:59", "HH:mm"))){
         $("#hour-4-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("12:59", "HH:mm"))){
-        $("#hour-4-text").addClass("bg-secondary")
+        $("#hour-4-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("12:00", "HH:mm"))){
         $("#hour-4-text").addClass("bg-success")
     }
@@ -108,7 +108,7 @@ function checkTime () {
     if(moment().isBetween(moment("13:00", "HH:mm"), moment("13:59", "HH:mm"))){
         $("#hour-5-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("13:59", "HH:mm"))){
-        $("#hour-5-text").addClass("bg-secondary")
+        $("#hour-5-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("13:00", "HH:mm"))){
         $("#hour-5-text").addClass("bg-success")
     }
@@ -116,7 +116,7 @@ function checkTime () {
     if(moment().isBetween(moment("14:00", "HH:mm"), moment("14:59", "HH:mm"))){
         $("#hour-6-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("14:59", "HH:mm"))){
-        $("#hour-6-text").addClass("bg-secondary")
+        $("#hour-6-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("14:00", "HH:mm"))){
         $("#hour-6-text").addClass("bg-success")
     }
@@ -124,7 +124,7 @@ function checkTime () {
     if(moment().isBetween(moment("15:00", "HH:mm"), moment("15:59", "HH:mm"))){
         $("#hour-7-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("15:59", "HH:mm"))){
-        $("#hour-7-text").addClass("bg-secondary")
+        $("#hour-7-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("15:00", "HH:mm"))){
         $("#hour-7-text").addClass("bg-success")
     }
@@ -132,7 +132,7 @@ function checkTime () {
     if(moment().isBetween(moment("16:00", "HH:mm"), moment("16:59", "HH:mm"))){
         $("#hour-8-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("16:59", "HH:mm"))){
-        $("#hour-8-text").addClass("bg-secondary")
+        $("#hour-8-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("16:00", "HH:mm"))){
         $("#hour-8-text").addClass("bg-success")
     }
@@ -140,7 +140,7 @@ function checkTime () {
     if(moment().isBetween(moment("17:00", "HH:mm"), moment("17:59", "HH:mm"))){
         $("#hour-9-text").addClass("bg-warning");
     }else if(moment().isAfter(moment("17:59", "HH:mm"))){
-        $("#hour-9-text").addClass("bg-secondary")
+        $("#hour-9-text").addClass("bg-secondary text-light")
     }else if(moment().isBefore(moment("17:00", "HH:mm"))){
         $("#hour-9-text").addClass("bg-success")
     }
